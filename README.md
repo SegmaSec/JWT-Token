@@ -19,7 +19,7 @@
 
 #### > Encode :
 ```sh
-0xPwn1@Arch~$ JWT-Token
+0xPwn1@Arch~$ jwt-token
        ___       ________   ______      __            
       / / |     / /_  __/  /_  __/___  / /_____  ____ 
  __  / /| | /| / / / /      / / / __ \/ //_/ _ \/ __ \
@@ -51,7 +51,7 @@ Drink Coffe, Enjoy Generate JWT-Token         By 0xPwn1 / v1.2
 ---
 #### > Decode :
 ```sh
-0xPwn1@Arch~$ JWT-Token
+0xPwn1@Arch~$ jwt-token
        ___       ________   ______      __            
       / / |     / /_  __/  /_  __/___  / /_____  ____ 
  __  / /| | /| / / / /      / / / __ \/ //_/ _ \/ __ \
