@@ -15,7 +15,7 @@ WHITE=255, 255, 255
 RED=255, 0,0
 GREEN=0, 255, 0
 
-lists = ["HS256", "HS512", "HS384", "RS256", "RS512", "RS384", "ES265", "ES512", "ES384", "PS256", "PS512", "PS384"]
+lists = ["HS256", "HS512", "HS384"]
 code = ["Encode","Decode"]
 generating = ["default","generate"]
 admin_value = ["true", "false", ""]
@@ -110,7 +110,7 @@ def encode_payload_generation(payload):
 
 
 def HMACSHA_encode(alg, en_header, en_payload, secret):
-    algos = {"HS256": hashlib.sha256, "HS512": hashlib.sha512}
+    algos = {"HS256": hashlib.sha256, "HS512": hashlib.sha512, "HS384": hashlib.sha384}
     # Encode header and payload as bytes
     header_bytes = en_header.encode()
     payload_bytes = en_payload.encode()
@@ -139,17 +139,17 @@ if x == 'encode':
 {
   "sub": "1234567890",
   "name": "John Doe",
-  "iat": 1516239022,
   "admin": "true"
 }
 """,(GREEN)))
         payload_Default()
-        encoded_payload = encode_payload(admin_value)
+        encoded_payload = encode_payload(admin)
     
     elif payload == "generate":
         encoded_payload = encode_payload_generation(playload_Generating())
     print("")
     print(color("---------- Signature -----------",(PURPLE)))
+    
     signature()
     result = HMACSHA_encode(alg, encoded_header, encoded_payload, secret)
     print("")
