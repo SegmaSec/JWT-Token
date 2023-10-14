@@ -34,7 +34,7 @@ print(color("""
 / /_/ / | |/ |/ / / /      / / / /_/ / ,< /  __/ / / /
 \____/  |__/|__/ /_/      /_/  \____/_/|_|\___/_/ /_/ 
                                                       
-Drink Coffe, Enjoy Generate JWT          By 0xPwn1 / v1.2 
+Drink Coffe, Enjoy Generate JWT-Token         By 0xPwn1 / v1.2 
 
 """,(PURPLE)))
 
