@@ -17,6 +17,7 @@
 
 ## 📌 Usage :
 
+#### > Encode :
 ```sh
 0xPwn1@Arch~$ JWT-Token
        ___       ________   ______      __            
@@ -25,7 +26,7 @@
 / /_/ / | |/ |/ / / /      / / / /_/ / ,< /  __/ / / /
 \____/  |__/|__/ /_/      /_/  \____/_/|_|\___/_/ /_/ 
                                                       
-Drink Coffe, Enjoy Generate JWT          By 0xPwn1 / v1.2 
+Drink Coffe, Enjoy Generate JWT-Token         By 0xPwn1 / v1.2 
 
 
 [~] Choose (Encode \ Decode): Encode
@@ -46,6 +47,27 @@ Drink Coffe, Enjoy Generate JWT          By 0xPwn1 / v1.2
  > Enter Your Secret Key (Enter To Skip): Hello World
 
 [$] Your Token is: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwidXNlcm5hbWUiOiIweFB3bjEiLCJhZG1pbiI6InRydWUifQ.UxCr1XdQP6UHxF_xGHNn-xoOKl1YltWigfCEHCWC6fU
+```
+---
+#### > Decode :
+```sh
+0xPwn1@Arch~$ JWT-Token
+       ___       ________   ______      __            
+      / / |     / /_  __/  /_  __/___  / /_____  ____ 
+ __  / /| | /| / / / /      / / / __ \/ //_/ _ \/ __ \
+/ /_/ / | |/ |/ / / /      / / / /_/ / ,< /  __/ / / /
+\____/  |__/|__/ /_/      /_/  \____/_/|_|\___/_/ /_/ 
+                                                      
+Drink Coffe, Enjoy Generate JWT-Token         By 0xPwn1 / v1.2 
+
+
+[~] Choose (Encode \ Decode): Decode
+[~] Enter Your JWT Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwidXNlcm5hbWUiOiIweFB3bjEiLCJhZG1pbiI6InRydWUifQ.UxCr1XdQP6UHxF_xGHNn-xoOKl1YltWigfCEHCWC6fU
+
+---------- Decode JWT Token -----------
+[+] Your Header is: {"alg":"HS256","typ":"JWT"}
+[+] Your Payload is: {"sub":"1234567890","username":"0xPwn1","admin":"true"}
+[+] Your Signature is: UxCr1XdQP6UHxF_xGHNn-xoOKl1YltWigfCEHCWC6fU
 ```
 
 ## 📜 Credits :
